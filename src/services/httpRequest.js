@@ -42,6 +42,25 @@ export const getPopular = async () => {
         console.log(err)
     }
 }
+
+export const getUpcoming = async () => {
+  try{
+      return await axios.get(`${movieURL}/movie/upcoming?api_key=${apiKEY}`)
+  }
+  catch(err) {
+      console.log(err)
+  }
+}
+
+export const getToprated = async () => {
+  try{
+      return await axios.get(`${movieURL}/movie/top_rated?api_key=${apiKEY}`)
+  }
+  catch(err) {
+      console.log(err)
+  }
+}
+
 export const movieImg =({
     url : movieIMG
   })

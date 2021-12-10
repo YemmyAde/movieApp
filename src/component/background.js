@@ -22,6 +22,8 @@ import image from "../assets/image.jpg"
 import vid2 from "../assets/210105.gif"
 import PopularMovies from "./popularMovies"
 import MovieTypes from "./movieTypes.js";
+import TopRated from "./topRated.js";
+import Upcoming from "./upcoming.js";
 
 function BackgroundLayout() {
   return (
@@ -83,6 +85,8 @@ function BackgroundLayout() {
       <Divider> </Divider>
       <MovieTypes />
       <PopularMovies />
+      <TopRated />
+      <Upcoming />
     </Body>
   );
 }
